@@ -11,6 +11,6 @@ podemos estruturar um código para ser reaproveitado, este é o ponto. É rápid
 criar um botão ou um checkbox, mas e se nossa aplicação precisar reaproveitar aquele componente? 
 Então, precisaríamos copiar e colar em toda parte, tornando esta ação chata, passível de erros e 
 de difícil manutenção. Não, isto não é legal, temos sempre que lembrar do conceito de reuso de código. 
-Assim, o Zend Framework 2 traz um pacote que nos permite fazer isto, que é o Zend\Form, com ele, 
+Assim, o Zend Framework 2 traz um pacote que nos permite fazer isto, que é o Zend\Form, com ele,  
 podemos criar formulários e componentes HTML e HTML5 em PHP, nos garantindo o reuso de código e estrutura para montagem dos componentes HTML da aplicação.
 [Veja o link do tutorial](http://www.schoolofnet.com/2015/03/criando-componentes-html-do-bootstrap-com-zendform/)
