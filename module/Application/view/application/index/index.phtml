@@ -1,0 +1,55 @@
+<?php $this->horizontalForm->prepare(); ?>
+<?php $this->inlineForm->prepare(); ?>
+<ul class="list-group">
+    <li class="list-group-item">
+        <h3>Formulário Horizontal</h3>
+        <?php echo $this->form($this->horizontalForm); ?>
+    </li>
+    <li class="list-group-item">
+        <h3>Formulário em linha</h3>
+        <?php echo $this->form($this->inlineForm, TwbBundle\Form\View\Helper\TwbBundleForm::LAYOUT_INLINE); ?>
+    </li>
+    <li class="list-group-item">
+        <h3>Campo simples</h3>
+        <?php echo $this->formElement($this->txtNome); ?>
+    </li>
+    <li class="list-group-item">
+        <h3>Campo envolto</h3>
+        <?php echo $this->formRow($this->txtNome); ?>
+    </li>
+    <li class="list-group-item">
+        <h3>Grupo de Botões</h3>
+        <?php echo $this->buttonGroup([$this->btnGroup1, $this->btnGroup2, $this->btnGroup3], ['class' => 'pull-right']); ?>
+    </li>
+    <li class="list-group-item">
+        <h3>Botão com lista suspensa</h3>
+        <?php echo $this->formButton($this->dropDown); ?>
+        <div class="clearfix"></div>
+    </li>
+    <li class="list-group-item">
+        <h3>Campo agregado</h3>
+        <?php echo $this->formElement($this->inputGroup); ?>
+        <div class="clearfix"></div>
+    </li>
+    <li class="list-group-item">
+        <h3>Mensagem</h3>
+        <?php echo $this->alert('Minha mensagem', ['class' => 'alert-success']); ?>
+        <?php echo $this->alert('Minha mensagem', ['class' => 'alert-info']); ?>
+        <?php echo $this->alert('Minha mensagem', ['class' => 'alert-danger']); ?>
+        <?php echo $this->alert('Minha mensagem', ['class' => 'alert-warning']); ?>
+    </li>
+    <li class="list-group-item">
+        <h3>Rótulos</h3>
+        <?php echo $this->label('Meu Label', ['class' => 'label-primary']); ?>
+        <?php echo $this->label('Meu Label', ['class' => 'label-success']); ?>
+        <?php echo $this->label('Meu Label', ['class' => 'label-info']); ?>
+        <?php echo $this->label('Meu Label', ['class' => 'label-danger']); ?>
+        <?php echo $this->label('Meu Label', ['class' => 'label-warning']); ?>
+    </li>
+    <li class="list-group-item">
+        <h3>Glyphicon</h3>
+        <?php echo $this->glyphicon('star', ['class' => 'pull-left']); ?>
+        <?php echo $this->glyphicon('minus', ['class' => 'pull-left']); ?>
+        <div class="clearfix"></div>
+    </li>
+</ul>
